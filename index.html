@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>notes App</title>
+</head>
+<body>
+    <!--notes text area-->
+    <div id="textarea-container" class="hidden">
+        <div id="textarea-top">
+            <ol class="textarea-list-container">
+                <li class="text-areaitem">
+                    <p class="textarea item">one</p>
+                </li>
+                <li class="text-areaitem">
+                    <p class="textarea item">two</p>
+                </li>
+                <li class="text-areaitem">
+                    <p class="textarea item">three</p>
+                </li>
+            </ol>
+            <div class="instructions"></div>
+        </div>
+        
+
+        <form class="textarea-form" action="/notes/index.html">
+            <textarea name="explanation" dirname="explanation.dir" maxlength="150" autocapitalize="on" autocorrect="on" placeholder="Enter some notes" cols="50" rows="10"></textarea>
+            <div class="btn-container">
+                <input type="reset" value="Clear">
+                <input type="submit" value="Post">
+            </div>
+            
+        </form>
+
+    </div>
+</body>
+</html>
