@@ -13,9 +13,13 @@ body{
     justify-content: center;
     height:100vh;
 }
+
 textarea{
     font-size:18px;
     resize:none;
+    padding:.5rem;
+    box-shadow: inset 0 0 1rem .25px;
+    outline:0;
 }
 .btn-container{
     width:100%;
@@ -36,12 +40,12 @@ textarea{
 }
 .textarea-list-container>li{
     color:#fff;
-    border-radius: 12px;
     padding:.25rem 1rem;
     border:2px dotted #fff;
     transition:.5s;
     width:100%;
     text-align: center;
+    list-style: none;
 }
 .textarea-list-container>li::marker{
 color:#fff;
@@ -59,17 +63,16 @@ color:#fff;
     color:#000;
     border:2px dotted #000;
     background:ghostwhite;
+    cursor:pointer;
 }
 .textarea-list-container{
-    border:3px dotted pink;
+    border:3px double pink;
     gap:.15rem;
     width:100%;
     display:flex;
     flex-direction:column;
     align-items: start;
     justify-content: space-evenly;
-
-    padding-left:1.05rem;
 
 }
 .instructions{
